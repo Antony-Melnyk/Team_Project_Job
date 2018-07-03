@@ -115,6 +115,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\BLL\BLL.csproj">
       <Project>{9faaf58d-b754-456e-b5be-8755eacc6040}</Project>
       <Name>BLL</Name>
