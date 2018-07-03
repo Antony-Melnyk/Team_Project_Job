@@ -11,7 +11,7 @@ namespace DAL.Concrete
     {
         protected override void Seed(Model1 context)
         {
-            context.Users.Add(new User { NickName = "lox", Name = "Roma", SName = "Andreev", TName = "Anatolyovuch", Age = 16, Email = "sss", Password = "1234" });
+            context.Users.Add(new User { NickName = "lox", Name = "Roma", SName = "Andreev", TName = "Anatolyovuch", Age = 16, Email = "sss", Password = "1234" , PhoneNumber = "0983757282", City = "Rovno"});
             context.SaveChanges();
             ///s
         }

@@ -13,6 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using BLL;
+using BLL.Concrete;
+
 namespace WpfApp1
 {
     /// <summary>
@@ -20,6 +22,8 @@ namespace WpfApp1
     /// </summary>
     public partial class MainWindow : Window
     {
+        string a;
+        string b;
         public MainWindow()
         {
             InitializeComponent();
@@ -27,11 +31,11 @@ namespace WpfApp1
 
         private void ButtonSignIn_Click(object sender, RoutedEventArgs e)
         {
-            if (Operations.SignIn(NickName_Text.Text, Password_Text.Password) == true)
+            if (Operations.SignIn(nickname: NickName_Text.Text, pass: Password_Text.Password) == true)
             {
                 Close();
-                MainWindow mw = new MainWindow();
-                mw..Content = NickName_Text.Text;
+                MainJobWindow mw = new MainJobWindow();
+                mw.NameBox.Text = NickName_Text.Text;
                 mw.Show();
                 Application.Current.Windows[0].Close();
             }
