@@ -10,30 +10,23 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace WpfApp1
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for RegWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class RegWindow : Window
     {
-        public MainWindow()
+        public RegWindow()
         {
             InitializeComponent();
         }
 
-        private void ButtonSignIn_Click(object sender, RoutedEventArgs e)
+        private void ButtonSignUp_Click(object sender, RoutedEventArgs e)
         {
 
-        }
-
-        private void Hyperlink_Click(object sender, RoutedEventArgs e)
-        {
-            RegWindow rw = new RegWindow();
-            rw.ShowDialog();
         }
     }
 }

@@ -3,10 +3,59 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="20"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Sign In" Height="280" Width="350" ResizeMode="NoResize">
     <Grid>
-        
+        <materialDesign:Card VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="10" Name="Card1">
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+
+                <TextBlock Text="Sign In" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="26"/>
+
+                <Grid Grid.Row="1" Grid.ColumnSpan="2" Name="GridSignIn">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="60"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Text="Login" VerticalAlignment="Bottom" HorizontalAlignment="Center"/>
+                    <TextBox Grid.Column="1" Name="textBoxLogin" Margin="0,0,10,0" FontSize="16"/>
+                    <TextBlock Text="Password" VerticalAlignment="Bottom" HorizontalAlignment="Center" Grid.Row="1"/>
+                    <PasswordBox Grid.Column="1" Grid.Row="1" Name="textBoxPassword" FontSize="10" Margin="0,0,10,0"/>
+                    <TextBlock Grid.Row="2" Grid.ColumnSpan="2" FontSize="13" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+                        <Hyperlink Click="Hyperlink_Click">
+                            I do not have an account?
+                        </Hyperlink>
+                    </TextBlock>
+                    <Button Grid.Row="3" Grid.ColumnSpan="2" Content="Sign In" FontWeight="Bold" Background="ForestGreen" VerticalAlignment="Center" Name="ButtonSignIn" Click="ButtonSignIn_Click" Margin="10,5,10,4"/>
+                </Grid>
+            </Grid>
+        </materialDesign:Card>
     </Grid>
 </Window>
