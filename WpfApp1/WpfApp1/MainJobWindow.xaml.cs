@@ -29,5 +29,10 @@ namespace WpfApp1
             MainWindow mw = new MainWindow();
             mw.ShowDialog();
         }
+
+        private void Hyperlink_Click_1(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
