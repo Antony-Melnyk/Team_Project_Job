@@ -60,9 +60,16 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="MainJobWindow.xaml.cs">
+      <DependentUpon>MainJobWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="RegWindow.xaml.cs">
       <DependentUpon>RegWindow.xaml</DependentUpon>
     </Compile>
+    <Page Include="MainJobWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
