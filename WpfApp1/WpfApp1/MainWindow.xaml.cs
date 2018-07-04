@@ -14,6 +14,9 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using BLL;
 using BLL.Concrete;
+using DAL;
+using DAL.Concrete;
+using DAL.Abstract;
 
 namespace WpfApp1
 {
@@ -22,8 +25,6 @@ namespace WpfApp1
     /// </summary>
     public partial class MainWindow : Window
     {
-        string a;
-        string b;
         public MainWindow()
         {
             InitializeComponent();
@@ -31,16 +32,34 @@ namespace WpfApp1
 
         private void ButtonSignIn_Click(object sender, RoutedEventArgs e)
         {
-            if (Operations.SignIn(nickname: NickName_Text.Text, pass: Password_Text.Password) == true)
+            using (Model1 mw = new Model1())
             {
-                Close();
-                MainJobWindow mw = new MainJobWindow();
-                mw.NameBox.Text = NickName_Text.Text;
-                mw.Show();
-                Application.Current.Windows[0].Close();
+                User s1 = new User();
+                s1.NickName = "ShinigamiNengen";
+                s1.Name = "Roma";
+                s1.SName = "Adreev";
+                s1.TName = "Anatolyovich";
+                s1.PhoneNumber = "09847537573";
+                s1.Password = "123";
+                s1.Age = 16;
+                s1.City = "Rivne";
+                s1.Email = "roma.andreev@gmail.com";
+                s1.ImgPath = "string";
+                s1.Resume = "test";
+                mw.Users.Add(s1);
+                mw.SaveChanges();
             }
-            else
-                MessageBox.Show("Error. Check your login and password", "Message", MessageBoxButton.OK, MessageBoxImage.Warning);
+
+            //if (Operations.SignIn(nickname: NickName_Text.Text, pass: Password_Text.Password) == true)
+            //{
+            //    Close();
+            //    MainJobWindow mw = new MainJobWindow();
+            //    mw.NameBox.Text = NickName_Text.Text;
+            //    mw.Show();
+            //    Application.Current.Windows[0].Close();
+            //}
+            //else
+            //    MessageBox.Show("Error. Check your login and password", "Message", MessageBoxButton.OK, MessageBoxImage.Warning);
         }
 
         private void Hyperlink_Click(object sender, RoutedEventArgs e)

@@ -31,7 +31,7 @@ namespace DAL.Concrete
         public string City { get; set; }
         [Required]
         public int Age { get; set; }
-        [Required]
+
         public string Resume { get; set; }
         [Required]
         public string Email { get; set; }
