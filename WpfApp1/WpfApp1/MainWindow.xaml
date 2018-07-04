@@ -28,7 +28,7 @@
                     <RowDefinition />
                 </Grid.RowDefinitions>
 
-                <TextBlock Text="Sign In" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="26"/>
+                <TextBlock Text="Вход" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="26"/>
 
                 <Grid Grid.Row="1" Grid.ColumnSpan="2" Name="GridSignIn">
 
@@ -44,16 +44,16 @@
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
 
-                    <TextBlock Text="Login" VerticalAlignment="Bottom" HorizontalAlignment="Center"/>
+                    <TextBlock Text="Nickname" VerticalAlignment="Bottom" HorizontalAlignment="Center"/>
                     <TextBox x:Name="NickName_Text" Grid.Column="1" Margin="0,0,10,0" FontSize="16"/>
                     <TextBlock Text="Password" VerticalAlignment="Bottom" HorizontalAlignment="Center" Grid.Row="1"/>
                     <PasswordBox x:Name="Password_Text" Grid.Column="1" Grid.Row="1"  FontSize="10" Margin="0,0,10,0"/>
                     <TextBlock Grid.Row="2" Grid.ColumnSpan="2" FontSize="13" HorizontalAlignment="Center" VerticalAlignment="Bottom">
                         <Hyperlink Click="Hyperlink_Click">
-                            I do not have an account?
+                            У вас еще нету аккауна?
                         </Hyperlink>
                     </TextBlock>
-                    <Button Grid.Row="3" Grid.ColumnSpan="2" Content="Sign In" FontWeight="Bold" Background="ForestGreen" VerticalAlignment="Center" Name="ButtonSignIn" Click="ButtonSignIn_Click" Margin="10,5,10,4"/>
+                    <Button Grid.Row="3" Grid.ColumnSpan="2" Content="Вход" FontWeight="Bold" Background="ForestGreen" VerticalAlignment="Center" Name="ButtonSignIn" Click="ButtonSignIn_Click" Margin="10,5,10,4"/>
                 </Grid>
             </Grid>
         </materialDesign:Card>

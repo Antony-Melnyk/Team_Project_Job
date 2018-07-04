@@ -22,17 +22,10 @@
         </Grid.RowDefinitions>
 
         <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Right">
-            <TextBlock x:Name="NameBox" Grid.Row="2" Grid.ColumnSpan="2" FontSize="13" HorizontalAlignment="Center" VerticalAlignment="Bottom">
-                
-            </TextBlock>
-            <TextBlock Grid.Row="2" Grid.ColumnSpan="2" FontSize="13" HorizontalAlignment="Center" VerticalAlignment="Bottom">
-                        <Hyperlink Click="Hyperlink_Click_1">
-                            Fill out the resume
-                        </Hyperlink>
-            </TextBlock>
+            <TextBlock x:Name="NameBox" Grid.Row="2" Grid.ColumnSpan="2" FontSize="13" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
             <TextBlock Grid.Row="2" Grid.ColumnSpan="2" FontSize="13" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="10,0,0,0">
                         <Hyperlink Click="Hyperlink_Click">
-                            SignIn
+                            Вход
                         </Hyperlink>
             </TextBlock>
         </StackPanel>
@@ -40,7 +33,7 @@
         <materialDesign:Card Grid.Row="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Name="Card1">
             <Grid>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="35"/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
 
@@ -53,23 +46,48 @@
                         <ColumnDefinition Width="30"/>
                     </Grid.ColumnDefinitions>
 
-                    <TextBlock Text=" Search" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0,0,0,0"/>
+                    <TextBlock Text="Поиск" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0,0,0,0"/>
                     <TextBox Grid.Column="1" Name="textBoxSearch"/>
-                    <ComboBox Name="comboBoxCityes" Grid.Column="2" Margin="5,0,5,0">
-                        <ComboBoxItem Content="Kyiv"/>
-                        <ComboBoxItem Content="Rivne"/>
-                        <ComboBoxItem Content="Lviv"/>
-                        <ComboBoxItem Content="Harkiv"/>
-                        <ComboBoxItem Content="asd"/>
-                        <ComboBoxItem Content="asd"/>
-                        <ComboBoxItem Content="asd"/>
-                        <ComboBoxItem Content="asd"/>
-                        <ComboBoxItem Content="asd"/>
-                        <ComboBoxItem Content="asd"/>
+                    <ComboBox Name="comboBoxCityes" Grid.Column="2" Margin="5,0,5,0" SelectedIndex="0">
+                        <ComboBoxItem Content="Киев"/>
+                        <ComboBoxItem Content="Ровно"/>
+                        <ComboBoxItem Content="Львов"/>
+                        <ComboBoxItem Content="Харьков"/>
+                        <ComboBoxItem Content="Одеса"/>
+                        <ComboBoxItem Content="Черновцы"/>
+                        <ComboBoxItem Content="Днепр"/>
+                        <ComboBoxItem Content="Луцк"/>
+                        <ComboBoxItem Content="Тернополь"/>
+                        <ComboBoxItem Content="Житомир"/>
                     </ComboBox>
-                    <Image Grid.Column="3" Cursor="Hand" Source="Resources/search.png" Margin="1"/>
-                    
+                    <Image Grid.Column="3" Cursor="Hand" Source="Resources/search.png" Margin="1,5,1,1"/>
+
                 </Grid>
+
+                <Grid Grid.Row="1">
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+
+                    <Image Source="Resources/resume.png" Margin="5"/>
+
+                    <Grid Grid.Column="1">
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition Height="75"/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+
+                        <TextBlock Text="Размести резюме" VerticalAlignment="Bottom" Margin="10,0,0,0"/>
+                        <TextBlock Grid.Row="1" Text="чтобы лучшие работодатели смогли тебя найти и предложить новую работу. Новая работа – новые возможности." FontSize="14" TextWrapping="Wrap" Margin="10,0"/>
+                        <Button Content="Разместить резюме" Grid.Row="2" VerticalAlignment="Top" Background="#ff5252" Click="Hyperlink_Click_Resume" Margin="10,0"/>
+
+                    </Grid>
+                </Grid>
+
             </Grid>
         </materialDesign:Card>
     </Grid>
