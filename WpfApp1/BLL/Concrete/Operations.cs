@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace BLL.Concrete
 {
-    class Operations : IMyBll
+    public class Operations : IMyBll
     {
         private readonly IDal _dal;
 

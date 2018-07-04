@@ -22,6 +22,9 @@
         </Grid.RowDefinitions>
 
         <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Right">
+            <TextBlock x:Name="NameBox" Grid.Row="2" Grid.ColumnSpan="2" FontSize="13" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+                
+            </TextBlock>
             <TextBlock Grid.Row="2" Grid.ColumnSpan="2" FontSize="13" HorizontalAlignment="Center" VerticalAlignment="Bottom">
                         <Hyperlink Click="Hyperlink_Click_1">
                             Fill out the resume
