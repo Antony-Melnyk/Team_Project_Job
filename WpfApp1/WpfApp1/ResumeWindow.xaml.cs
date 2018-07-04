@@ -15,26 +15,13 @@ using System.Windows.Shapes;
 namespace WpfApp1
 {
     /// <summary>
-    /// Interaction logic for MainJobWindow.xaml
+    /// Interaction logic for ResumeWindow.xaml
     /// </summary>
-    public partial class MainJobWindow : Window
+    public partial class ResumeWindow : Window
     {
-        public MainJobWindow()
+        public ResumeWindow()
         {
             InitializeComponent();
         }
-
-        private void Hyperlink_Click(object sender, RoutedEventArgs e)
-        {
-            MainWindow mw = new MainWindow();
-            mw.ShowDialog();
-        }
-
-        private void Hyperlink_Click_Resume(object sender, RoutedEventArgs e)
-        {
-            ResumeWindow rw = new ResumeWindow();
-            rw.ShowDialog();
-        }
     }
 }
-

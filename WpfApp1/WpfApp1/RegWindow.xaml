@@ -13,7 +13,7 @@
         FontFamily="{DynamicResource MaterialDesignFont}"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="Registration" Height="490" Width="350" ResizeMode="NoResize">
+        Title="Registration" Height="530" Width="350" ResizeMode="NoResize">
     <Grid>
         <materialDesign:Card VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="10" Name="Card1">
 
@@ -28,11 +28,12 @@
                     <RowDefinition />
                 </Grid.RowDefinitions>
 
-                <TextBlock Text="Registration" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="26"/>
+                <TextBlock Text="Регистрация" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="26"/>
 
                 <Grid Grid.Row="1" Grid.ColumnSpan="2" Name="GridRegistr">
 
                     <Grid.RowDefinitions>
+                        <RowDefinition Height="40"/>
                         <RowDefinition Height="40"/>
                         <RowDefinition Height="40"/>
                         <RowDefinition Height="40"/>
@@ -57,17 +58,19 @@
                     <TextBox Grid.Column="1" Grid.Row="2" Name="textBoxFName" Margin="0,0,10,0" FontSize="16"/>
                     <TextBlock Text="Surname" VerticalAlignment="Bottom" HorizontalAlignment="Center" Grid.Row="3"/>
                     <TextBox Grid.Column="1" Grid.Row="3" Name="textBoxSName" Margin="0,0,10,0" FontSize="16"/>
-                    <TextBlock Text="Age" VerticalAlignment="Bottom" HorizontalAlignment="Center" Grid.Row="4"/>
-                    <TextBox Grid.Column="1" Grid.Row="4" Name="textBoxAge" Margin="0,0,10,0" FontSize="16"/>
-                    <TextBlock Text="Email" VerticalAlignment="Bottom" HorizontalAlignment="Center" Grid.Row="5"/>
-                    <TextBox Grid.Column="1" Grid.Row="5" Name="textBoxEmail" Margin="0,0,10,0" FontSize="16"/>
-                    <TextBlock Text="City" VerticalAlignment="Bottom" HorizontalAlignment="Center" Grid.Row="6"/>
-                    <ComboBox Grid.Row="6" Grid.Column="1" Margin="0,2,10,0" Height="39" Name="comboBoxCityes"/>
-                    <TextBlock Text="Phone Number" VerticalAlignment="Bottom" HorizontalAlignment="Center" Grid.Row="7"/>
-                    <TextBox Grid.Column="1" Grid.Row="7" Name="textBoxPhoneNumber" Margin="0,0,10,0" FontSize="16"/>
+                    <TextBlock Text="Age" VerticalAlignment="Bottom" HorizontalAlignment="Center" Grid.Row="5"/>
+                    <TextBox Grid.Column="1" Grid.Row="5" Name="textBoxAge" Margin="0,0,10,0" FontSize="16"/>
+                    <TextBlock Text="Third Name" VerticalAlignment="Bottom" HorizontalAlignment="Center" Grid.Row="4"/>
+                    <TextBox Grid.Column="1" Grid.Row="4" Name="textBoxThirdName" Margin="0,0,10,0" FontSize="16"/>
+                    <TextBlock Text="Email" VerticalAlignment="Bottom" HorizontalAlignment="Center" Grid.Row="6"/>
+                    <TextBox Grid.Column="1" Grid.Row="6" Name="textBoxEmail" Margin="0,0,10,0" FontSize="16"/>
+                    <TextBlock Text="City" VerticalAlignment="Bottom" HorizontalAlignment="Center" Grid.Row="7"/>
+                    <ComboBox Grid.Row="7" Grid.Column="1" Margin="0,2,10,0" Height="39" Name="comboBoxCityes"/>
+                    <TextBlock Text="Phone Number" VerticalAlignment="Bottom" HorizontalAlignment="Center" Grid.Row="8"/>
+                    <TextBox Grid.Column="1" Grid.Row="8" Name="textBoxPhoneNumber" Margin="0,0,10,0" FontSize="16"/>
                 </Grid>
 
-                <Button Grid.Row="1" Grid.ColumnSpan="2" Content="Sign Up" FontWeight="Bold" Background="ForestGreen" VerticalAlignment="Bottom" Margin="10,0,10,4" Name="ButtonSignUp" Click="ButtonSignUp_Click"/>
+                <Button Grid.Row="1" Grid.ColumnSpan="2" Content="Зарегистрироваться" FontWeight="Bold" Background="ForestGreen" VerticalAlignment="Bottom" Margin="10,0,10,4" Name="ButtonSignUp" Click="ButtonSignUp_Click"/>
             </Grid>
         </materialDesign:Card>
 
