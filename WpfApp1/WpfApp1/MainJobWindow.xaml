@@ -29,7 +29,6 @@
                         </Hyperlink>
             </TextBlock>
         </StackPanel>
-
         <materialDesign:Card Grid.Row="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Name="Card1">
             <Grid>
                 <Grid.RowDefinitions>
