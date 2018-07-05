@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.10
+VisualStudioVersion = 15.0.26730.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp1", "WpfApp1\WpfApp1.csproj", "{6F2CEAAF-750E-410F-976B-D0BB055A78DA}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chat", "Chat\Chat.csproj", "{7C00EB37-FF04-44FA-8DE5-D6DDC8863BD8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{2CCA5CB1-FA7D-43C5-B1BC-753968ED7987}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfService1", "WcfService1\WcfService1.csproj", "{0B7BB877-4FDA-4B54-AF87-F64B9D6EDDF0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{2CCA5CB1-FA7D-43C5-B1BC-753968ED7987}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2CCA5CB1-FA7D-43C5-B1BC-753968ED7987}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2CCA5CB1-FA7D-43C5-B1BC-753968ED7987}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B7BB877-4FDA-4B54-AF87-F64B9D6EDDF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B7BB877-4FDA-4B54-AF87-F64B9D6EDDF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B7BB877-4FDA-4B54-AF87-F64B9D6EDDF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B7BB877-4FDA-4B54-AF87-F64B9D6EDDF0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

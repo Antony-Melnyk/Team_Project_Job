@@ -65,7 +65,7 @@ namespace WpfApp1
                 DAL.Concrete.Type t11 = new DAL.Concrete.Type();
                 DAL.Concrete.Type t12 = new DAL.Concrete.Type();
                 DAL.Concrete.Type t13 = new DAL.Concrete.Type();
-                DAL.Concrete.Type t14= new DAL.Concrete.Type();
+                DAL.Concrete.Type t14 = new DAL.Concrete.Type();
                 DAL.Concrete.Type t15 = new DAL.Concrete.Type();
                 DAL.Concrete.Type t16 = new DAL.Concrete.Type();
                 DAL.Concrete.Type t17 = new DAL.Concrete.Type();
@@ -205,24 +205,6 @@ namespace WpfApp1
 
 
             }
-            using (Model1 mw = new Model1())
-            {
-                User s1 = new User();
-                s1.NickName = "ShinigamiNengen";
-                s1.Name = "Roma";
-                s1.SName = "Adreev";
-                s1.TName = "Anatolyovich";
-                s1.PhoneNumber = "09847537573";
-                s1.Password = "123";
-                s1.Age = 16;
-                s1.City = "Rivne";
-                s1.Email = "roma.andreev@gmail.com";
-                s1.ImgPath = "string";
-                s1.Resume = "test";
-                mw.Users.Add(s1);
-                mw.SaveChanges();
-            }
-
             //if (Operations.SignIn(nickname: NickName_Text.Text, pass: Password_Text.Password) == true)
             //{
             //    Close();
