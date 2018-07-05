@@ -48,18 +48,7 @@
 
                     <TextBlock Text="Поиск" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0,0,0,0"/>
                     <TextBox Grid.Column="1" Name="textBoxSearch"/>
-                    <ComboBox Name="comboBoxCityes" Grid.Column="2" Margin="5,0,5,0" SelectedIndex="0">
-                        <ComboBoxItem Content="Киев"/>
-                        <ComboBoxItem Content="Ровно"/>
-                        <ComboBoxItem Content="Львов"/>
-                        <ComboBoxItem Content="Харьков"/>
-                        <ComboBoxItem Content="Одеса"/>
-                        <ComboBoxItem Content="Черновцы"/>
-                        <ComboBoxItem Content="Днепр"/>
-                        <ComboBoxItem Content="Луцк"/>
-                        <ComboBoxItem Content="Тернополь"/>
-                        <ComboBoxItem Content="Житомир"/>
-                    </ComboBox>
+                    <ComboBox Name="comboBoxCityes" Grid.Column="2" Margin="5,0,5,0" SelectedIndex="0"/>
                     <Image Grid.Column="3" Cursor="Hand" Source="Resources/search.png" Margin="1,5,1,1"/>
 
                 </Grid>

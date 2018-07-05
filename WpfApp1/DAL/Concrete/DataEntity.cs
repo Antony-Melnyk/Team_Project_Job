@@ -91,10 +91,9 @@ namespace DAL.Concrete
 
         [Required]
         public string YourPosition { get; set; }
-        
+
         [Required]
         public User User { get; set; }
-
     }
 
     public class Type
