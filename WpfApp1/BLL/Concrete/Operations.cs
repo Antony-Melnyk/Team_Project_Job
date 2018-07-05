@@ -19,7 +19,7 @@ namespace BLL.Concrete
             _dal = dal;
         }
 
-        public bool Registration(string name, string sname, string tname, string nickname, string password, string phonenumber, string city, int age, string email)
+        public bool Registration(string name, string sname, string tname, string nickname, string password, string phonenumber, int city, int age, string email)
         {
             User user = new User
             {
@@ -29,7 +29,7 @@ namespace BLL.Concrete
                 NickName = nickname,
                 Password = password,
                 PhoneNumber = phonenumber,
-                City = city,
+                CityId = city,
                 Age = age,
                 Email = email,
                 ImgPath = null

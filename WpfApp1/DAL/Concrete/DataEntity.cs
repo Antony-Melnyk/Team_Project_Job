@@ -28,7 +28,7 @@ namespace DAL.Concrete
         [Required]
         public string PhoneNumber { get; set; }
         [Required]
-        public string City { get; set; }
+        public int CityId { get; set; }
         [Required]
         public int Age { get; set; }
 
