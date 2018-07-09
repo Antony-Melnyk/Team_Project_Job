@@ -32,23 +32,7 @@ namespace WpfApp1
 
         private void ButtonSignIn_Click(object sender, RoutedEventArgs e)
         {
-            using (Model1 mw = new Model1())
-            {
-                User s1 = new User();
-                s1.NickName = "ShinigamiNengen";
-                s1.Name = "Roma";
-                s1.SName = "Adreev";
-                s1.TName = "Anatolyovich";
-                s1.PhoneNumber = "09847537573";
-                s1.Password = "123";
-                s1.Age = 16;
-                s1.CityId = 24;
-                s1.Email = "roma.andreev@gmail.com";
-                s1.ImgPath = "string";
-                s1.Resume = "test";
-                mw.Users.Add(s1);
-                mw.SaveChanges();
-            }
+            //Operations operations = new Operations(DAL.Abstract.IDal);
 
             using (Model1 mw = new Model1())
             {

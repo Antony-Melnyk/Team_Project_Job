@@ -11,6 +11,10 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using BLL.Abstract;
+using DAL.Abstract;
+using BLL.Concrete;
+using DAL.Concrete;
 
 namespace WpfApp1
 {
@@ -22,6 +26,14 @@ namespace WpfApp1
         public MainJobWindow()
         {
             InitializeComponent();
+
+            using (DAL.Model1 m = new DAL.Model1())
+            {
+                foreach (City c in m.Cityes.ToList())
+                {
+                    comboBoxCityes.Items.Add(c.Name);
+                }
+            }
         }
 
         private void Hyperlink_Click(object sender, RoutedEventArgs e)
@@ -35,6 +47,10 @@ namespace WpfApp1
             ResumeWindow rw = new ResumeWindow();
             rw.ShowDialog();
         }
+
+        private void Hyperlink_Click_Profile(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
-

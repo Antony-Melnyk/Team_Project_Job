@@ -18,5 +18,6 @@ namespace DAL
         public virtual DbSet<User> Users { get; set; }
         public virtual DbSet<Job> Jobs { get; set; }
         public virtual DbSet<Concrete.Type> Types { get; set; }
+        public virtual DbSet<City> Cityes { get; set; }
     }
 }

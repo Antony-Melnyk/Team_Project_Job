@@ -13,9 +13,10 @@
         FontFamily="{DynamicResource MaterialDesignFont}"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="MainJobWindow" Height="364" Width="521">
+        Title="MainJobWindow" Height="364" Width="521"
+        Icon="Resources/jobicon.png">
     <Grid Margin="10">
-
+        
         <Grid.RowDefinitions>
             <RowDefinition Height="20"/>
             <RowDefinition/>
@@ -23,6 +24,11 @@
 
         <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Right">
             <TextBlock x:Name="NameBox" Grid.Row="2" Grid.ColumnSpan="2" FontSize="13" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+            <TextBlock Grid.Row="2" Grid.ColumnSpan="2" FontSize="13" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="10,0,0,0">
+                        <Hyperlink Click="Hyperlink_Click_Profile">
+                            Профиль
+                        </Hyperlink>
+            </TextBlock>
             <TextBlock Grid.Row="2" Grid.ColumnSpan="2" FontSize="13" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="10,0,0,0">
                         <Hyperlink Click="Hyperlink_Click">
                             Вход
@@ -59,7 +65,7 @@
                         <ColumnDefinition />
                     </Grid.ColumnDefinitions>
 
-                    <Image Source="Resources/resume.png" Margin="5"/>
+                    <Image Source="Resources/resume.png" Margin="10"/>
 
                     <Grid Grid.Column="1">
 

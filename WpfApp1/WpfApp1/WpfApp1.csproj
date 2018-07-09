@@ -151,5 +151,8 @@
   <ItemGroup>
     <Resource Include="Resources\resume.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\jobicon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
