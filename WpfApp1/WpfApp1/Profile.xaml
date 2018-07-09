@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
         Title="Profile" Height="502.346" Width="486.253">
     <Grid >
@@ -19,6 +20,8 @@
             <ColumnDefinition Width="211*"/>
             <ColumnDefinition Width="228*"/>
         </Grid.ColumnDefinitions>
+        
+        
         <Image x:Name="Avatar" Grid.Column="1" Grid.Row="0" Margin="20,10"/>
         <Label x:Name="lebel_znak" Content="?" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="80" Grid.Row="0" Height="137"/>
         <Label Content="FoundJob" FontSize="30" Foreground="Blue" FontFamily="Yu Gothic UI Semibold"/>
@@ -32,7 +35,5 @@
 
         <TextBlock Text="Резюме: " Grid.Row="5" FontSize="22"/>
         <Button Content="Скачать" Grid.Column="1" Grid.Row="5" FontSize="22" Height="Auto" Margin="5"/>
-
-
     </Grid>
 </Window>

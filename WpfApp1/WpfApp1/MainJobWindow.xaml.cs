@@ -50,7 +50,8 @@ namespace WpfApp1
 
         private void Hyperlink_Click_Profile(object sender, RoutedEventArgs e)
         {
-
+            Profile pr = new Profile();
+            pr.ShowDialog();
         }
     }
 }
