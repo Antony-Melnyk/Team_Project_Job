@@ -189,16 +189,16 @@ namespace WpfApp1
 
 
             }
-            if (IDalSignIn(nickname: NickName_Text.Text, pass: Password_Text.Password) == true)
-            {
-                Close();
-                MainJobWindow mw = new MainJobWindow();
-                mw.NameBox.Text = NickName_Text.Text;
-                mw.Show();
-                Application.Current.Windows[0].Close();
-            }
-            else
-                MessageBox.Show("Error. Check your login and password", "Message", MessageBoxButton.OK, MessageBoxImage.Warning);
+            //if (IDalSignIn(nickname: NickName_Text.Text, pass: Password_Text.Password) == true)
+            //{
+            //    Close();
+            //    MainJobWindow mw = new MainJobWindow();
+            //    mw.NameBox.Text = NickName_Text.Text;
+            //    mw.Show();
+            //    Application.Current.Windows[0].Close();
+            //}
+            //else
+            //    MessageBox.Show("Error. Check your login and password", "Message", MessageBoxButton.OK, MessageBoxImage.Warning);
         }
 
         private void Hyperlink_Click(object sender, RoutedEventArgs e)
