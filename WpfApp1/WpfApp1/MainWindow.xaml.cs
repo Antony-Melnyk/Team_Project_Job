@@ -189,6 +189,7 @@ namespace WpfApp1
 
 
             }
+            //xyu
             //if (IDalSignIn(nickname: NickName_Text.Text, pass: Password_Text.Password) == true)
             //{
             //    Close();
