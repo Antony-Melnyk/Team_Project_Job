@@ -76,6 +76,9 @@
     <Compile Include="RegWindow.xaml.cs">
       <DependentUpon>RegWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ResumeForUser.xaml.cs">
+      <DependentUpon>ResumeForUser.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ResumeWindow.xaml.cs">
       <DependentUpon>ResumeWindow.xaml</DependentUpon>
     </Compile>
@@ -100,6 +103,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="RegWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ResumeForUser.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
