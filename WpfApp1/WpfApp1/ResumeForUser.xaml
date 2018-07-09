@@ -13,23 +13,23 @@
         FontFamily="{DynamicResource MaterialDesignFont}"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="ResumeWindow" Height="533.333" Width="600.666"
+        Title="ResumeWindow" Height="550" Width="600"
         Icon="Resources/jobicon.png">
     <Grid Margin="20">
         <materialDesign:Card VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
 
             <Grid>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="52"/>
-                    <RowDefinition Height="52*"/>
-                    <RowDefinition Height="52*"/>
-                    <RowDefinition Height="52*"/>
-                    <RowDefinition Height="52*"/>
-                    <RowDefinition Height="52*"/>
-                    <RowDefinition Height="52*"/>
-                    <RowDefinition Height="52*"/>
-                    <RowDefinition Height="52*"/>
                     <RowDefinition Height="30"/>
+                    <RowDefinition Height="50*"/>
+                    <RowDefinition Height="50*"/>
+                    <RowDefinition Height="50*"/>
+                    <RowDefinition Height="50*"/>
+                    <RowDefinition Height="50*"/>
+                    <RowDefinition Height="50*"/>
+                    <RowDefinition Height="50*"/>
+                    <RowDefinition Height="50*"/>
+                    <RowDefinition Height="40"/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="152*"/>
@@ -53,6 +53,9 @@
                 <TextBox Name="textBoxExpirience" Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="2" Margin="5"/>
                 <TextBlock x:Name="obrazovanie" Text="Oбразование:" Grid.Row="7" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                 <TextBox Name="textBoxObrazovanie" Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="2" Margin="5"/>
+                <TextBlock Text="Иностранные языки:" Grid.Row="8" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                <TextBox Name="textBoxLanguages" Grid.Row="8" Grid.Column="1" Grid.ColumnSpan="2" Margin="5"/>
+                <Button Content="Сохранить резюме" Grid.Row="9" Grid.ColumnSpan="3" VerticalAlignment="Center" HorizontalAlignment="Center" Background="White" Foreground="Black"/>
             </Grid>
         </materialDesign:Card>
     </Grid>
