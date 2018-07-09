@@ -49,7 +49,7 @@ namespace WpfApp1
         }
 
         private void Hyperlink_Click_Profile(object sender, RoutedEventArgs e)
-        {
+        { 
             Profile p = new Profile();
             p.ShowDialog();
         }

@@ -7,12 +7,12 @@
         xmlns:materialDesgin="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
-        Title="Profile" Height="502.346" Width="486.253">
-    <Grid >
-        <materialDesgin:Card Margin="10,10,10,0" Height="452">
-
+        Title="Profile" Height="502.346" Width="486.253"
+        Icon="Resources/jobicon.png">
+    <Grid Margin="15">
+        <materialDesgin:Card VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+            
             <Grid>
-
                 <Grid.RowDefinitions>
                     <RowDefinition Height="130*"/>
                     <RowDefinition Height="40*"/>
@@ -41,7 +41,6 @@
                 <TextBlock Text="Резюме: " Grid.Row="5" FontSize="22" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                 <Button Content="Скачать" Grid.Column="1" Grid.Row="5" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center"/>
             </Grid>
-
         </materialDesgin:Card>
     </Grid>
 </Window>
