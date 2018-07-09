@@ -13,7 +13,7 @@
         FontFamily="{DynamicResource MaterialDesignFont}"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="MainJobWindow" Height="364" Width="521"
+        Title="FindYourJob" Height="364" Width="521"
         Icon="Resources/jobicon.png">
     <Grid Margin="10">
         
