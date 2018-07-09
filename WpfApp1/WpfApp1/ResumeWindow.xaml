@@ -13,7 +13,8 @@
         FontFamily="{DynamicResource MaterialDesignFont}"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="ResumeWindow" Height="300" Width="300">
+        Title="ResumeWindow" Height="500" Width="400"
+        Icon="Resources/jobicon.png">
     <Grid>
 
         <Grid.RowDefinitions>
@@ -23,6 +24,7 @@
         </Grid.RowDefinitions>
 
         <TextBlock Text="Resume" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-
+        
+        
     </Grid>
 </Window>
