@@ -46,5 +46,6 @@
         <TextBlock x:Name="dosvid" Text="Опыт работы: 2 года" Grid.ColumnSpan="3" Grid.Row="6"/>
         <TextBlock x:Name="obrazovanie" Text="Oбразование: 2 высших образование" Grid.ColumnSpan="3" Grid.Row="7"/>
         
+        
     </Grid>
 </Window>
