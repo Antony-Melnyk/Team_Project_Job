@@ -15,36 +15,39 @@
         mc:Ignorable="d"
         Title="ResumeWindow" Height="533.333" Width="566.666"
         Icon="Resources/jobicon.png">
-    <Grid>
+    <Grid Margin="20">
+        <materialDesign:Card VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
 
-        <Grid.RowDefinitions>
-            <RowDefinition Height="52"/>
-            <RowDefinition Height="52*"/>
-            <RowDefinition Height="52*"/>
-            <RowDefinition Height="52*"/>
-            <RowDefinition Height="52*"/>
-            <RowDefinition Height="52*"/>
-            <RowDefinition Height="52*"/>
-            <RowDefinition Height="52*"/>
-            <RowDefinition Height="52*"/>
-            <RowDefinition Height="30"/>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="152*"/>
-            <ColumnDefinition Width="109*"/>
-            <ColumnDefinition Width="131*"/>
-        </Grid.ColumnDefinitions>
-        <TextBlock Text="Резюме" TextAlignment="Center" Grid.ColumnSpan="3"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="52"/>
+                    <RowDefinition Height="52*"/>
+                    <RowDefinition Height="52*"/>
+                    <RowDefinition Height="52*"/>
+                    <RowDefinition Height="52*"/>
+                    <RowDefinition Height="52*"/>
+                    <RowDefinition Height="52*"/>
+                    <RowDefinition Height="52*"/>
+                    <RowDefinition Height="52*"/>
+                    <RowDefinition Height="30"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="152*"/>
+                    <ColumnDefinition Width="109*"/>
+                    <ColumnDefinition Width="131*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="Резюме" TextAlignment="Center" Grid.ColumnSpan="3"/>
 
-        <Image Margin="10" Grid.RowSpan="3"/>
-        <Label x:Name="lebel_znak" Content="?" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontSize="60" Height="87" Margin="86,0,94,25" Width="37" Grid.RowSpan="3"/>
-        <TextBlock x:Name="FIO" Text="ФИО: Name SName TName" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2"/>
-        <TextBlock x:Name="dateofbirth" Text="Дата рождение: 2000.09.06" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2"/>
-        <TextBlock x:Name="placelive" Text="Место проживания: Rivne,Ukraine" Grid.Row="3" Grid.ColumnSpan="3"/>
-        <TextBlock x:Name="numbertel" Text="Номер телефона: 0987654321" Grid.Row="4" Grid.ColumnSpan="3"/>
-        <TextBlock x:Name="posada" Text="Желаемая должность: Директор" Grid.Row="5" Grid.ColumnSpan="3"/>
-        <TextBlock x:Name="dosvid" Text="Опыт работы: 2 года" Grid.ColumnSpan="3" Grid.Row="6"/>
-        <TextBlock x:Name="obrazovanie" Text="Oбразование: 2 высших образование" Grid.ColumnSpan="3" Grid.Row="7"/>
-        
+                <Image Margin="10" Grid.RowSpan="3"/>
+                <Label x:Name="lebel_znak" Content="?" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontSize="60" Height="87" Margin="86,0,94,25" Width="37" Grid.RowSpan="3"/>
+                <TextBlock x:Name="FIO" Text="ФИО: Name SName TName" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2"/>
+                <TextBlock x:Name="dateofbirth" Text="Дата рождение: 2000.09.06" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2"/>
+                <TextBlock x:Name="placelive" Text="Место проживания: Rivne,Ukraine" Grid.Row="3" Grid.ColumnSpan="3"/>
+                <TextBlock x:Name="numbertel" Text="Номер телефона: 0987654321" Grid.Row="4" Grid.ColumnSpan="3"/>
+                <TextBlock x:Name="posada" Text="Желаемая должность: Директор" Grid.Row="5" Grid.ColumnSpan="3"/>
+                <TextBlock x:Name="dosvid" Text="Опыт работы: 2 года" Grid.ColumnSpan="3" Grid.Row="6"/>
+                <TextBlock x:Name="obrazovanie" Text="Oбразование: 2 высших образование" Grid.ColumnSpan="3" Grid.Row="7"/>
+            </Grid>
+        </materialDesign:Card>
     </Grid>
 </Window>
