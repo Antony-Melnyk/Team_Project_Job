@@ -4,35 +4,43 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
+        xmlns:materialDesgin="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
         Title="Profile" Height="502.346" Width="486.253">
     <Grid >
-        <Grid.RowDefinitions>
-            <RowDefinition Height="130*"/>
-            <RowDefinition Height="40*"/>
-            <RowDefinition Height="45*"/>
-            <RowDefinition Height="90*"/>
-            <RowDefinition Height="45*"/>
-            <RowDefinition Height="60*"/>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="211*"/>
-            <ColumnDefinition Width="228*"/>
-        </Grid.ColumnDefinitions>
-        <Image x:Name="Avatar" Grid.Column="1" Grid.Row="0" Margin="20,10"/>
-        <Label x:Name="lebel_znak" Content="?" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="80" Grid.Row="0" Height="137"/>
-        <Label Content="FoundJob" FontSize="30" Foreground="Blue" FontFamily="Yu Gothic UI Semibold"/>
-        <Button Content="Изменить Аватар" Grid.Column="1" Grid.Row="1" Height="Auto" Margin="0,5" />
-        <TextBlock x:Name="nick_name" Text="Nick Name" Grid.Column="1" Grid.Row="2" FontSize="22" HorizontalAlignment="Center" Margin="61,0,59,0" Width="108"/>
-        <TextBlock Text="Nick Name: " Grid.Row="2" FontSize="22"/>
-        <TextBlock x:Name="info" Text="Info" Grid.Column="1" Grid.Row="3" FontSize="22" HorizontalAlignment="Center" Margin="95,0" Width="38"/>
-        <TextBlock Text="Информация: " Grid.Row="3" FontSize="22"/>
-        <TextBlock x:Name="email" Text="email@gmail.com" Grid.Column="1" Grid.Row="4" FontSize="22" HorizontalAlignment="Center" Margin="27,0" Width="174" />
-        <TextBlock Text="Електронная Почта: " Grid.Row="4" FontSize="22"/>
+        <materialDesgin:Card Margin="10,10,10,0" Height="452">
 
-        <TextBlock Text="Резюме: " Grid.Row="5" FontSize="22"/>
-        <Button Content="Скачать" Grid.Column="1" Grid.Row="5" FontSize="22" Height="Auto" Margin="5"/>
+            <Grid>
 
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="130*"/>
+                    <RowDefinition Height="40*"/>
+                    <RowDefinition Height="45*"/>
+                    <RowDefinition Height="90*"/>
+                    <RowDefinition Height="45*"/>
+                    <RowDefinition Height="60*"/>
+                </Grid.RowDefinitions>
 
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="211*"/>
+                    <ColumnDefinition Width="228*"/>
+                </Grid.ColumnDefinitions>
+
+                <Image x:Name="Avatar" Grid.Column="1" Grid.Row="0" Margin="20,10"/>
+                <Label x:Name="lebel_znak" Content="?" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="80" Grid.Row="0" Height="137"/>
+                <Label Content="FoundJob" FontSize="30" Foreground="Blue" FontFamily="Yu Gothic UI Semibold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <Button Content="Изменить Аватар" Grid.Column="1" Grid.Row="1"  VerticalAlignment="Center" HorizontalAlignment="Center" />
+                <TextBlock x:Name="nick_name" Text="Nick Name" Grid.Column="1" Grid.Row="2" FontSize="22" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Text="Nick Name: " Grid.Row="2" FontSize="22" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                <TextBlock x:Name="info" Text="Info" Grid.Column="1" Grid.Row="3" FontSize="22" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Text="Информация: " Grid.Row="3" FontSize="22" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                <TextBlock x:Name="email" Text="email@gmail.com" Grid.Column="1" Grid.Row="4" FontSize="22" HorizontalAlignment="Center" VerticalAlignment="Center" Width="174" />
+                <TextBlock Text="Електронная Почта: " Grid.Row="4" FontSize="22" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+                <TextBlock Text="Резюме: " Grid.Row="5" FontSize="22" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                <Button Content="Скачать" Grid.Column="1" Grid.Row="5" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </Grid>
+
+        </materialDesgin:Card>
     </Grid>
 </Window>
