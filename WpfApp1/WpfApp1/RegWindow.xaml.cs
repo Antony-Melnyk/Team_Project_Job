@@ -11,6 +11,11 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using BLL;
+using BLL.Concrete;
+using DAL;
+using DAL.Concrete;
+using DAL.Abstract;
 
 namespace WpfApp1
 {
@@ -26,7 +31,18 @@ namespace WpfApp1
 
         private void ButtonSignUp_Click(object sender, RoutedEventArgs e)
         {
+            //Operations operations = new Operations(DAL.Abstract.IDal);
 
+            //if (operations.Registration(textBoxFName.Text, textBoxSName.Text, textBoxThirdName.Text,
+            //    textBoxNickname.Text, textBoxPassword.Password, Convert.ToInt32(textBoxAge.Text), textBoxEmail.Text) == true)
+            //{
+                MainJobWindow mw = new MainJobWindow();
+                mw.Show();
+                mw.NameBox.Text = textBoxNickname.Text;
+                Close();
+            //}
+            //else
+                MessageBox.Show("Error. Check your login and password", "Message", MessageBoxButton.OK, MessageBoxImage.Warning);
         }
     }
 }

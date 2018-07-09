@@ -107,6 +107,6 @@ namespace DAL.Concrete
     {
         public int Id { get; set; }
         [Required]
-        public string Citys { get; set; }
+        public string Name { get; set; }
     }
 }
