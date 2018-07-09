@@ -29,8 +29,8 @@
 
                 <Image x:Name="Avatar" Grid.Column="1" Grid.Row="0" Margin="20,10"/>
                 <Label x:Name="lebel_znak" Content="?" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="80" Grid.Row="0" Height="137"/>
-                <Label Content="FoundJob" FontSize="30" Foreground="Blue" FontFamily="Yu Gothic UI Semibold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                <Button Content="Изменить Аватар" Grid.Column="1" Grid.Row="1"  VerticalAlignment="Center" HorizontalAlignment="Center" />
+                <Label Content="FoundJob" FontSize="30" Foreground="Blue" FontFamily="Leelawadee UI Semilight" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <Button Content="Изменить Аватар" Grid.Column="1" Grid.Row="1"  VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="Black" Background="LightBlue" />
                 <TextBlock x:Name="nick_name" Text="Nick Name" Grid.Column="1" Grid.Row="2" FontSize="22" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 <TextBlock Text="Nick Name: " Grid.Row="2" FontSize="22" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                 <TextBlock x:Name="info" Text="Info" Grid.Column="1" Grid.Row="3" FontSize="22" HorizontalAlignment="Center" VerticalAlignment="Center"/>
@@ -39,7 +39,7 @@
                 <TextBlock Text="Електронная Почта: " Grid.Row="4" FontSize="22" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
                 <TextBlock Text="Резюме: " Grid.Row="5" FontSize="22" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                <Button Content="Скачать" Grid.Column="1" Grid.Row="5" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                <Button Content="Просмотреть" Grid.Column="1" Grid.Row="5" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Button_Click" Foreground="Black" Background="LightBlue"/>
             </Grid>
         </materialDesgin:Card>
     </Grid>
