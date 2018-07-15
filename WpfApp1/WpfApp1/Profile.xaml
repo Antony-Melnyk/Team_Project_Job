@@ -11,7 +11,7 @@
         Icon="Resources/jobicon.png">
     <Grid Margin="15">
         <materialDesgin:Card VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
-            
+
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="130*"/>
