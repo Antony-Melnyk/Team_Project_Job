@@ -15,21 +15,13 @@ using System.Windows.Shapes;
 namespace WpfApp1
 {
     /// <summary>
-    /// Interaction logic for Profile.xaml
+    /// Interaction logic for MainWindowForEmployer.xaml
     /// </summary>
-    public partial class Profile : Window
+    public partial class MainWindowForEmployer : Window
     {
-        public Profile()
+        public MainWindowForEmployer()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            ResumeForUser rfu = new ResumeForUser();
-            rfu.ShowDialog();
-            //ResumeWindow rw = new ResumeWindow();
-            //rw.ShowDialog();
         }
     }
 }

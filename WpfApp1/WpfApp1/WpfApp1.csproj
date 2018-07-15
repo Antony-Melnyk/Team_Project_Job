@@ -70,6 +70,9 @@
     <Compile Include="MainJobWindow.xaml.cs">
       <DependentUpon>MainJobWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MainWindowForEmployer.xaml.cs">
+      <DependentUpon>MainWindowForEmployer.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Profile.xaml.cs">
       <DependentUpon>Profile.xaml</DependentUpon>
     </Compile>
@@ -98,6 +101,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="MainWindowForEmployer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Profile.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -160,6 +167,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\jobicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\employer.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

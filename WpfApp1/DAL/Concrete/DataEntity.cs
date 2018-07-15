@@ -109,4 +109,25 @@ namespace DAL.Concrete
         [Required]
         public string Name { get; set; }
     }
+
+    public class Resume
+    {
+        public int Id { get; set; }
+        [Required]
+        public string FIO { get; set; }
+        [Required]
+        public string DateOfBirth { get; set; }
+        [Required]
+        public string PlaceLiving { get; set; }
+        [Required]
+        public string PhoneNumber { get; set; }
+        [Required]
+        public string Position { get; set; }
+        [Required]
+        public string Xperience { get; set; }
+        [Required]
+        public string Education { get; set; }
+        [Required]
+        public string Language { get; set; }
+    }
 }

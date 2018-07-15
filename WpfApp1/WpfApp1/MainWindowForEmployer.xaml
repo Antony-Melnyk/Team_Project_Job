@@ -1,0 +1,88 @@
+﻿<Window x:Class="WpfApp1.MainWindowForEmployer"
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="20"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindowForEmployer" Height="364" Width="521"
+        Icon="Resources/employer.png">
+    <Grid Margin="10">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Right">
+            <TextBlock x:Name="NameBox" Grid.Row="2" Grid.ColumnSpan="2" FontSize="13" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+            <TextBlock Grid.Row="2" Grid.ColumnSpan="2" FontSize="13" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="10,0,0,0">
+                        <Hyperlink Click="Hyperlink_Click_Profile">
+                            Профиль
+                        </Hyperlink>
+            </TextBlock>
+            <TextBlock Grid.Row="2" Grid.ColumnSpan="2" FontSize="13" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="10,0,0,0">
+                        <Hyperlink Click="Hyperlink_Click">
+                            Вход
+                        </Hyperlink>
+            </TextBlock>
+        </StackPanel>
+        <materialDesign:Card Grid.Row="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Name="Card1">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="35"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="70"/>
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="120"/>
+                        <ColumnDefinition Width="30"/>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Text="Поиск " VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0,0,0,0"/>
+                    <TextBox Grid.Column="1" Name="textBoxSearch"/>
+                    <ComboBox Name="comboBoxCityes" Grid.Column="2" Margin="5,0,5,0" SelectedIndex="0"/>
+                    <Image Grid.Column="3" Cursor="Hand" Source="Resources/search.png" Margin="1,5,1,1"/>
+
+                </Grid>
+
+                <Grid Grid.Row="1">
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+
+                    <Image Source="Resources/employer.png" Margin="10"/>
+
+                    <Grid Grid.Column="1">
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition Height="75"/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+
+                        <TextBlock Text="Создай роботу" VerticalAlignment="Bottom" Margin="10,0,0,0"/>
+                        <TextBlock Grid.Row="1" Text="начни свой собстевнный бизнес и предложи новую работу. Новая работа – новые возможности." FontSize="14" TextWrapping="Wrap" Margin="10,0"/>
+                        <Button Content="Создать роботу" Grid.Row="2" VerticalAlignment="Top" Background="#ff5252" Click="Hyperlink_Click_Resume" Margin="10,0"/>
+
+                    </Grid>
+                </Grid>
+
+            </Grid>
+        </materialDesign:Card>
+    </Grid>
+</Window>
