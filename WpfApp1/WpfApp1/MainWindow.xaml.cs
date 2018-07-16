@@ -33,7 +33,7 @@ namespace WpfApp1
         private void ButtonSignIn_Click(object sender, RoutedEventArgs e)
         {
             //Operations operations = new Operations(DAL.Abstract.IDal);
-
+            //j
             using (Model1 mw = new Model1())
             {
                 DAL.Concrete.Type t1 = new DAL.Concrete.Type();
