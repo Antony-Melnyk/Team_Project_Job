@@ -59,17 +59,22 @@ namespace BLL.Concrete
             }
         }
 
-        public void AddJob(string name, DAL.Concrete.Type type, int salary, string info, string path, User user)
+        public void AddJob(string name, string topik, DAL.Concrete.Type type, int salary, string info, string path, User user, City newCity, string position, string numberofemp)
         {
             Job job = new Job
             {
                 Name = name,
                 Type = type,
+                Topik = topik,
                 Salary = salary,
                 Info = info,
                 ImgPath = path,
-                User = user
+                User = user,
+                City = newCity,
+                YourPosition = position,
+                NumberOfEmployees = numberofemp
             };
+
             using (Model1 m1 = new Model1())
             {
                 m1.Jobs.Add(job);

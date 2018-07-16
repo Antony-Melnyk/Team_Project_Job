@@ -1,0 +1,79 @@
+﻿<Window x:Class="WpfApp1.CreateJobWindow"
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="20"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Registration" Height="589" Width="350" ResizeMode="NoResize"
+        Icon="Resources/jobicon.png">
+    <Grid>
+        <materialDesign:Card VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="10" Name="Card1">
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+
+                <TextBlock Text="Робота" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="26"/>
+
+                <Grid Grid.Row="1" Grid.ColumnSpan="2" Name="GridRegistr">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="100"/>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="40"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Text="Name" VerticalAlignment="Bottom" HorizontalAlignment="Center"/>
+                    <TextBox Grid.Column="1" Name="textBoxName" Margin="0,0,10,0" FontSize="16"/>
+                    <TextBlock Text="Topik" VerticalAlignment="Bottom" HorizontalAlignment="Center" Grid.Row="1"/>
+                    <TextBox Grid.Column="1" Grid.Row="1" Name="textBoxTopik" FontSize="10" Margin="0,0,10,0"/>
+                    <TextBlock Text="Salary" VerticalAlignment="Bottom" HorizontalAlignment="Center" Grid.Row="2"/>
+                    <TextBox Grid.Column="1" Grid.Row="2" Name="textBoxSalary" Margin="0,0,10,0" FontSize="16"/>
+                    <TextBlock Text="Type" VerticalAlignment="Bottom" HorizontalAlignment="Center" Grid.Row="3"/>
+                    <TextBox Grid.Column="1" Grid.Row="3" Name="TextBoxType" Margin="0,0,10,0" FontSize="16"/>
+                    <TextBlock Text="City" VerticalAlignment="Bottom" HorizontalAlignment="Center" Grid.Row="5"/>
+                    <ComboBox Grid.Column="1" Grid.Row="5" Name="comboBoxCityes" Margin="0,0,10,0" FontSize="16"/>
+                    <TextBlock Text="Img" VerticalAlignment="Bottom" HorizontalAlignment="Center" Grid.Row="4"/>
+                    <Button Grid.Column="1" Grid.Row="4" Content="Open Image" Margin="6" FontSize="16" Name="imageButon"/>
+                    <TextBlock Text="NumberOfEmployees" FontSize="14" VerticalAlignment="Bottom" HorizontalAlignment="Center" Grid.Row="6"/>
+                    <TextBox Grid.Column="1" Grid.Row="6" Name="textBoxNOE" Margin="0,0,10,0" FontSize="16"/>
+                    <TextBlock Text="Info" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="7"/>
+                    <TextBox Grid.Row="7" Grid.Column="1" Margin="0,0,10,0" FontSize="12" Name="textBoxinfo" TextWrapping="Wrap"/>
+                    <TextBlock Text="Your Position" VerticalAlignment="Bottom" HorizontalAlignment="Center" Grid.Row="8"/>
+                    <TextBox Grid.Column="1" Grid.Row="8" Name="textBoxPosition" Margin="0,0,10,0" FontSize="16"/>
+                </Grid>
+
+                <Button Grid.Row="1" Grid.ColumnSpan="2" Content="Добавить роботу" FontWeight="Bold" Background="ForestGreen" VerticalAlignment="Bottom" Margin="10,0,10,4" Name="CreateJobButton" Click="CreateJobButton_Click"/>
+            </Grid>
+        </materialDesign:Card>
+
+    </Grid>
+</Window>

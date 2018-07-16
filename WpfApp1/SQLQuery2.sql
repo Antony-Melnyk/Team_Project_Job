@@ -1,1 +1,1 @@
-﻿select * from Types
+﻿select * from Jobs
