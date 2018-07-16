@@ -40,11 +40,16 @@ namespace WpfApp1
         private void ButtonSignUp_Click(object sender, RoutedEventArgs e)
         {
             Operations op = new Operations(dal);
-
+            Profile pr = new Profile();
             if(op.Registration(textBoxFName.Text,textBoxSName.Text,textBoxThirdName.Text,textBoxNickname.Text,textBoxPassword.Password,textBoxPhoneNumber.Text,
                 comboBoxCityes.SelectedIndex,Convert.ToInt16(textBoxAge.Text),textBoxEmail.Text)==true)
             {
-                MessageBox.Show("Registration succesfull");
+                MainJobWindow mw = new MainJobWindow();
+                mw.Show();
+                mw.NameBox.Text = textBoxNickname.Text;
+                pr.nick_name.Text = textBoxNickname.Text;
+                pr.ls.Visibility = 0;
+                Close();
             }
             else
             {
