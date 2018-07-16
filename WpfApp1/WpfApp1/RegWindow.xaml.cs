@@ -44,10 +44,7 @@ namespace WpfApp1
             if(op.Registration(textBoxFName.Text,textBoxSName.Text,textBoxThirdName.Text,textBoxNickname.Text,textBoxPassword.Password,textBoxPhoneNumber.Text,
                 comboBoxCityes.SelectedIndex,Convert.ToInt16(textBoxAge.Text),textBoxEmail.Text)==true)
             {
-                MainJobWindow mw = new MainJobWindow();
-                mw.Show();
-                mw.NameBox.Text = textBoxNickname.Text;
-                Close();
+                MessageBox.Show("Registration succesfull");
             }
             else
             {
