@@ -23,5 +23,20 @@ namespace WpfApp1
         {
             InitializeComponent();
         }
+
+        private void Hyperlink_Click_Resume(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Hyperlink_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Hyperlink_Click_1(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
