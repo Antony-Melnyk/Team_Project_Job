@@ -40,6 +40,7 @@ namespace WpfApp1
         {
             MainWindow mw = new MainWindow();
             mw.ShowDialog();
+            Close();
         }
 
         private void Hyperlink_Click_Resume(object sender, RoutedEventArgs e)

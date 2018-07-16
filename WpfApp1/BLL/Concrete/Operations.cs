@@ -92,14 +92,6 @@ namespace BLL.Concrete
             }
         }
 
-        public bool Registration(string name, string sname, string tname, string nickname, string password, int age, string email)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void AddJob(string name, DAL.Concrete.Type type, int salary, string info, string path, User user, City newCity, string position, string numberofemp)
-        {
-            throw new NotImplementedException();
-        }
+       
     }
 }
