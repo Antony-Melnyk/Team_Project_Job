@@ -53,17 +53,22 @@ namespace DAL.Concrete
             }
         }
 
-        public void AddJob(string name, Type type, int salary, string info, string path, User user)
+        public void AddJob(string name, string topik, DAL.Concrete.Type type, int salary, string info, string path, User user, City newCity, string position, string numberofemp)
         {
             Job job = new Job
             {
                 Name = name,
                 Type = type,
+                Topik = topik,
                 Salary = salary,
                 Info = info,
                 ImgPath = path,
-                User = user
+                User = user,
+                City = newCity,
+                YourPosition = position,
+                NumberOfEmployees = numberofemp
             };
+
             using (Model1 m1 = new Model1())
             {
                 m1.Jobs.Add(job);
@@ -78,6 +83,16 @@ namespace DAL.Concrete
                 m1.Jobs.Remove(a);
                 m1.SaveChanges();
             }
+        }
+
+        public void AddJob(string name, Type type, int salary, string info, string path, User user)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void AddJob(string name, Type type, int salary, string info, string path, User user, City newCity, string position, string numberofemp)
+        {
+            throw new NotImplementedException();
         }
         //public string GetDataById(int id)
         //{

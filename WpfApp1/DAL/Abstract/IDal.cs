@@ -11,7 +11,7 @@ namespace DAL.Abstract
     {
         bool Registration(string name, string sname, string tname, string nickname, string password, int age, string email);
         bool SignIn(string nickname, string pass);
-        void AddJob(string name, Concrete.Type type, int salary, string info, string path, User user);
+        void AddJob(string name, string topik, DAL.Concrete.Type type, int salary, string info, string path, User user, City newCity, string position, string numberofemp);
         void DelJob(Job a);
     }
 }
