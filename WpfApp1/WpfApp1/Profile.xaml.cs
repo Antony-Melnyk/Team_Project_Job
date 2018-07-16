@@ -31,5 +31,11 @@ namespace WpfApp1
             //ResumeWindow rw = new ResumeWindow();
             //rw.ShowDialog();
         }
+
+        private void ls_Click(object sender, RoutedEventArgs e)
+        {
+            ChatWindow ch = new ChatWindow();
+            ch.ShowDialog();
+        }
     }
 }

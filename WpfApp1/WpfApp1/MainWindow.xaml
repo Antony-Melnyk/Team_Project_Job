@@ -13,7 +13,7 @@
         FontFamily="{DynamicResource MaterialDesignFont}"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="Sign In" Height="280" Width="350" ResizeMode="NoResize"
+        Title="Sign In" Height="295" Width="375" ResizeMode="NoResize"
         Icon="Resources/jobicon.png">
     <Grid>
         <materialDesign:Card VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="5" Name="Card1">
@@ -55,7 +55,7 @@
                             У вас еще нету аккаунта?
                         </Hyperlink>
                     </TextBlock>
-                    
+
                     <RadioButton x:Name="radioemployer" Content="Employer" Grid.Row="3" HorizontalAlignment="Center" FontSize="16" VerticalAlignment="Bottom" GroupName="gr1"/>
                     <RadioButton x:Name="radioworker" Content="Worker" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Center" FontSize="16" VerticalAlignment="Bottom" GroupName="gr1"/>
                     <Button Grid.Row="4" Grid.ColumnSpan="2" Content="Вход" FontWeight="Bold" Background="ForestGreen" VerticalAlignment="Center" Name="ButtonSignIn" Click="ButtonSignIn_Click" Margin="10,5,10,4"/>
