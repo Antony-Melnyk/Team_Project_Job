@@ -1,1 +1,1 @@
-﻿select * from Cities
+﻿select * from Users
