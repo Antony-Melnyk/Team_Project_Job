@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DAL.Concrete;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,6 +20,7 @@ namespace WpfApp1
     /// </summary>
     public partial class MainWindowForEmployer : Window
     {
+        User user = new User();
         public MainWindowForEmployer()
         {
             InitializeComponent();
@@ -36,7 +38,8 @@ namespace WpfApp1
 
         private void Hyperlink_Click_1(object sender, RoutedEventArgs e)
         {
-
+            Profile pr = new Profile();
+            pr.ShowDialog();
         }
     }
 }

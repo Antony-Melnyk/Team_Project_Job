@@ -31,7 +31,7 @@ xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
             </TextBlock>
             <TextBlock Grid.Row="2" Grid.ColumnSpan="2" FontSize="13" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="10,0,0,0">
                         <Hyperlink Click="Hyperlink_Click">
-                            Вход
+                            <TextBlock x:Name="exit" Text="Вход"/>
                         </Hyperlink>
             </TextBlock>
         </StackPanel>

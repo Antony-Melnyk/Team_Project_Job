@@ -50,17 +50,28 @@ namespace WpfApp1
                 if (radioemployer.IsChecked == true)
                 {
                     pfr.Show();
+                    pfr.NameBox.Text = NickName_Text.Text;
+                    pfr.exit.Text = "Выход";
+                    //Profile pr = new Profile();
+                    //pr.nick_name.Text = NickName_Text.Text;
+                    //pr.ls.Visibility = 0;
+
                 }
                 else
                 {
                     mjw.Show();
+                    mjw.NameBox.Text = NickName_Text.Text;
+                    mjw.exit.Text = "Выход";
+                    Profile pr = new Profile();
+                    pr.nick_name.Text = NickName_Text.Text;
+                    pr.ls.Visibility = 0;
+
                 }
-                
-                
-                
-                
-               
-               
+
+
+                //mw.Show();
+
+
             }
             else
             {
