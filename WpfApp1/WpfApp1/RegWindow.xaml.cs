@@ -34,8 +34,6 @@ namespace WpfApp1
         {
             Operations op = new Operations(dal);
 
-            op.Registration();
-
             //IDal dal;
             //Operations operations = new Operations(dal: dal);
 

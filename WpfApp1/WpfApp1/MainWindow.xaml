@@ -16,7 +16,7 @@
         Title="Sign In" Height="280" Width="350" ResizeMode="NoResize"
         Icon="Resources/jobicon.png">
     <Grid>
-        <materialDesign:Card VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="10" Name="Card1">
+        <materialDesign:Card VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="5" Name="Card1">
 
             <Grid>
                 <Grid.ColumnDefinitions>
@@ -37,6 +37,7 @@
                         <RowDefinition Height="40"/>
                         <RowDefinition Height="40"/>
                         <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
                         <RowDefinition Height="60"/>
                     </Grid.RowDefinitions>
 
@@ -54,7 +55,10 @@
                             У вас еще нету аккауна?
                         </Hyperlink>
                     </TextBlock>
-                    <Button Grid.Row="3" Grid.ColumnSpan="2" Content="Вход" FontWeight="Bold" Background="ForestGreen" VerticalAlignment="Center" Name="ButtonSignIn" Click="ButtonSignIn_Click" Margin="10,5,10,4"/>
+                    
+                    <RadioButton x:Name="radioemployer" Content="Emoployer" Grid.Row="3" HorizontalAlignment="Center" FontSize="16" VerticalAlignment="Bottom" GroupName="gr1"/>
+                    <RadioButton x:Name="radioworker" Content="Worker" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Center" FontSize="16" VerticalAlignment="Bottom" GroupName="gr1"/>
+                    <Button Grid.Row="4" Grid.ColumnSpan="2" Content="Вход" FontWeight="Bold" Background="ForestGreen" VerticalAlignment="Center" Name="ButtonSignIn" Click="ButtonSignIn_Click" Margin="10,5,10,4"/>
                 </Grid>
             </Grid>
         </materialDesign:Card>
