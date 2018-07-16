@@ -44,31 +44,20 @@ namespace WpfApp1
             if(op.Registration(textBoxFName.Text,textBoxSName.Text,textBoxThirdName.Text,textBoxNickname.Text,textBoxPassword.Password,textBoxPhoneNumber.Text,
                 comboBoxCityes.SelectedIndex,Convert.ToInt16(textBoxAge.Text),textBoxEmail.Text)==true)
             {
-                MainJobWindow mw = new MainJobWindow();
-                mw.Show();
-                mw.NameBox.Text = textBoxNickname.Text;
-                pr.nick_name.Text = textBoxNickname.Text;
-                pr.ls.Visibility = 0;
+                //MainJobWindow mw = new MainJobWindow();
+                //mw.Show();
+                //mw.NameBox.Text = textBoxNickname.Text;
+                //pr.nick_name.Text = textBoxNickname.Text;
+                //pr.ls.Visibility = 0;
                 Close();
+                MessageBox.Show("Registration succesfull");
             }
             else
             {
             MessageBox.Show("Error. Check your login and password", "Message", MessageBoxButton.OK, MessageBoxImage.Warning);
             }
 
-            //IDal dal;
-            //Operations operations = new Operations(dal: dal);
-
-            //if (operations.Registration(textBoxFName.Text, textBoxSName.Text, textBoxThirdName.Text,
-            //    textBoxNickname.Text, textBoxPassword.Password, Convert.ToInt32(textBoxAge.Text), textBoxEmail.Text) == true)
-            //{
-            //    MainJobWindow mw = new MainJobWindow();
-            //    mw.Show();
-            //    mw.NameBox.Text = textBoxNickname.Text;
-            //    Close();
-            //}
-            //else
-            //    MessageBox.Show("Error. Check your login and password", "Message", MessageBoxButton.OK, MessageBoxImage.Warning);
+            
         }
     }
 }
